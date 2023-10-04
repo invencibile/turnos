@@ -1,0 +1,35 @@
+.container{
+    display:grid;
+    /* grid-template: filas / columnas */
+    grid-template: 100px 1fr 100px / 400px 1fr;
+    grid-template-areas: "header header"/*2 cols p header*/
+                        "left contenido"
+                        "footer footer";/*2 cols p footer*/
+    grid-gap: 10px;
+    height: 100vh;                    
+}
+.header{
+    grid-area: header;
+}
+.left{
+    grid-area: left;
+}
+.contenido{
+    grid-area: contenido;
+}
+.footer{
+    grid-area: footer;
+}
+.item{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* https://animate.style/ es la pagina para hacer animaciones
+https://fontawesome.com/ es para elegir fuentes 
+https://fonts.google.com se copia el link y se agrega en el head del css
+link href="https://fonts.googleapis.com/....
+y para usarla se copia el link de abajo y se pega en el font-family
+o se descarga la fuente y se deja el archivo en la carpeta fonts dentro de la carpeta css*/
